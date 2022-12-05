@@ -7,7 +7,7 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash-kibun72.png",
+      "image": "./assets/transparent-Logo-Kibun.png",
       "resizeMode": "contain",
       "backgroundColor": "#10BD01"
     },

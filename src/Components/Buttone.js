@@ -1,13 +1,13 @@
 import { Button } from 'native-base'
 import React from 'react'
 
-function Buttone({mt,bg,color,children,onPress}) {
+function Buttone({mt,bg,color,children,onPress,w=200,h=55,rounded=25}) {
   return (
     <Button 
-        w={200}
-        h={55} 
+        w={w}
+        h={h} 
         mt={mt} 
-        rounded="full" 
+        rounded={rounded}
         bg={bg}
         _text={{
             color:color, 
