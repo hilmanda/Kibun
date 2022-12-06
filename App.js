@@ -1,8 +1,9 @@
 import React from "react";
 import { NativeBaseProvider, Box } from "native-base";
-import GetStartedScreen from "./src/Screens/GetStartedScreen";
 import { useFonts, Poppins_700Bold } from "@expo-google-fonts/poppins";
 import { OpenSans_700Bold, OpenSans_400Regular } from "@expo-google-fonts/open-sans";
+import WelcomeScreen from "./src/Screens/WelcomeScreen";
+import LoginScreen from "./src/Screens/LoginScreen";
 
 export default function App() {
   
@@ -17,7 +18,7 @@ export default function App() {
   }
   return (
     <NativeBaseProvider>
-      <GetStartedScreen/> 
+      <LoginScreen/> 
     </NativeBaseProvider>
   );
 }
