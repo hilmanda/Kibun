@@ -1,13 +1,15 @@
 import React from "react";
-import { NativeBaseProvider, Box } from "native-base";
+import { NativeBaseProvider } from "native-base";
 import { useFonts, Poppins_700Bold } from "@expo-google-fonts/poppins";
-import { OpenSans_700Bold, OpenSans_400Regular } from "@expo-google-fonts/open-sans";
-import SignUpScreen from "./src/Screens/SignUpScreen";
+import {
+  OpenSans_700Bold,
+  OpenSans_400Regular,
+} from "@expo-google-fonts/open-sans";
+import PageScreen from "./src/Screens/PageScreen";
 
 export default function App() {
-  
   let [fontsLoaded] = useFonts({
-    Poppins_700Bold, 
+    Poppins_700Bold,
     OpenSans_700Bold,
     OpenSans_400Regular,
   });
@@ -17,7 +19,7 @@ export default function App() {
   }
   return (
     <NativeBaseProvider>
-      <SignUpScreen/> 
+      <PageScreen />
     </NativeBaseProvider>
   );
 }
