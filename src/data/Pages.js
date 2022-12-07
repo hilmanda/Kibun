@@ -1,16 +1,3 @@
-const pages = [
-  {
-    name: "Tanaman Hias",
-    page: <TanamanHias />,
-  },
-  {
-    name: "Sayuran",
-    page: <Sayuran />,
-  },
-  {
-    name: "Buah-buahan",
-    page: <Buah />,
-  },
-];
-
-export default pages;
+export default pages = {
+  title: ["Tanaman Hias", "Sayuran", "Buah-buahan", "Tren"],
+};

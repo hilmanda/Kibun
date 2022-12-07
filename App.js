@@ -5,7 +5,8 @@ import {
   OpenSans_700Bold,
   OpenSans_400Regular,
 } from "@expo-google-fonts/open-sans";
-import PageScreen from "./src/Screens/PageScreen";
+import TanamanHiasScreen from "./src/Screens/TanamanHiasScreen";
+import TrenScreen from "./src/Screens/TrenScreen";
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -19,7 +20,7 @@ export default function App() {
   }
   return (
     <NativeBaseProvider>
-      <PageScreen />
+      <TrenScreen />
     </NativeBaseProvider>
   );
 }

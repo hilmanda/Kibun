@@ -2,11 +2,11 @@ import React from "react";
 import { Box, Heading, VStack } from "native-base";
 import Colors from "../color";
 import FontName from "../fonts/fontName";
-import TanamanHias from "../Components/TanamanHias";
 import { AntDesign } from "@expo/vector-icons";
 import pages from "../data/Pages";
+import Buah from "../Components/Buah";
 
-function PageScreen() {
+function BuahScreen() {
   return (
     <Box flex={1} safeAreaTop bg={Colors.green} py={10}>
       <VStack pl={5}>
@@ -19,18 +19,18 @@ function PageScreen() {
           color={Colors.white}
           isTruncated
         >
-          Tanaman Hias
+          {pages.title[2]}
         </Heading>
       </VStack>
       {/* <Center pb={5}>
       </Center> */}
       <Box h="full" bg={Colors.lightGray} borderTopRadius={15} px={5}>
         <Box>
-          <TanamanHias />
+          <Buah />
         </Box>
       </Box>
     </Box>
   );
 }
 
-export default PageScreen;
+export default BuahScreen;
