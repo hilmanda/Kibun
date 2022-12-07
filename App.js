@@ -2,8 +2,7 @@ import React from "react";
 import { NativeBaseProvider, Box } from "native-base";
 import { useFonts, Poppins_700Bold } from "@expo-google-fonts/poppins";
 import { OpenSans_700Bold, OpenSans_400Regular } from "@expo-google-fonts/open-sans";
-import WelcomeScreen from "./src/Screens/WelcomeScreen";
-import LoginScreen from "./src/Screens/LoginScreen";
+import SignUpScreen from "./src/Screens/SignUpScreen";
 
 export default function App() {
   
@@ -18,7 +17,7 @@ export default function App() {
   }
   return (
     <NativeBaseProvider>
-      <LoginScreen/> 
+      <SignUpScreen/> 
     </NativeBaseProvider>
   );
 }

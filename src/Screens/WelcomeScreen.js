@@ -23,13 +23,13 @@ function WelcomeScreen() {
           ml={5}
           mb={-20}
           size="360"
-          alt="front-image"
+          alt="welcome-image"
         />
         <Image source={require("../../assets/Logo-Kibun.png")}
           resizeMode="contain"
           ml={10}
           size="200"
-          alt="front-image"
+          alt="logo-kibun"
         />
 
       </Center>
