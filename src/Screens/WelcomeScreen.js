@@ -3,7 +3,7 @@ import { Box, Center, Image, Text, VStack } from "native-base";
 import Colors from "../color";
 import FontName from "../fonts/fontName";
 import Buttone from "../Components/Buttone";
-function WelcomeScreen() {
+function WelcomeScreen({ navigation }) {
   return (
     <Box flex={1} bg={Colors.green}>
       <Center w="full">
@@ -33,10 +33,18 @@ function WelcomeScreen() {
         />
       </Center>
       <VStack space={10} px={5} alignItems="center">
-        <Buttone bg={Colors.white} color={Colors.green}>
+        <Buttone
+          bg={Colors.white}
+          color={Colors.green}
+          onPress={() => navigation.navigate("Login")}
+        >
           LOGIN
         </Buttone>
-        <Buttone bg={Colors.darkGreen} color={Colors.white}>
+        <Buttone
+          bg={Colors.darkGreen}
+          color={Colors.white}
+          onPress={() => navigation.navigate("SignUp")}
+        >
           SIGN UP
         </Buttone>
       </VStack>

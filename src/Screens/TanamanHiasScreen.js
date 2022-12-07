@@ -1,16 +1,18 @@
 import React from "react";
-import { Box, Heading, VStack } from "native-base";
+import { Box, Heading, VStack, Pressable } from "native-base";
 import Colors from "../color";
 import FontName from "../fonts/fontName";
 import TanamanHias from "../Components/TanamanHias";
 import { AntDesign } from "@expo/vector-icons";
 import pages from "../data/Pages";
 
-function TanamanHiasScreen() {
+function TanamanHiasScreen({ navigation }) {
   return (
     <Box flex={1} safeAreaTop bg={Colors.green} py={10}>
       <VStack pl={5}>
-        <AntDesign pb={-5} name="arrowleft" size={24} color={Colors.white} />
+        <Pressable onPress={() => navigation.navigate("Beranda")}>
+          <AntDesign pb={-5} name="arrowleft" size={24} color={Colors.white} />
+        </Pressable>
         <Heading
           fontFamily={FontName.poppins700}
           fontSize={24}

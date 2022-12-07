@@ -5,7 +5,7 @@ import FontName from "../fonts/fontName";
 import Buttone from "../Components/Buttone";
 import { FontAwesome } from "@expo/vector-icons";
 
-function SignUpScreen() {
+function SignUpScreen({ navigation }) {
   return (
     <Box flex={1} bg={Colors.green}>
       <Box position="absolute" w="full" h="full">
@@ -111,7 +111,13 @@ function SignUpScreen() {
           />
 
           {/* SIGN UP BUTTON */}
-          <Buttone mt={10} bg={Colors.white} color={Colors.green} w="70%">
+          <Buttone
+            mt={10}
+            bg={Colors.white}
+            color={Colors.green}
+            w="70%"
+            onPress={() => navigation.navigate("Login")}
+          >
             CREATE NEW ACCOUNT
           </Buttone>
           <Text
