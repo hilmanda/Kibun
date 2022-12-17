@@ -4,6 +4,9 @@ import Colors from "../color";
 import FontName from "../fonts/fontName";
 import Buttone from "../Components/Buttone";
 import { FontAwesome } from "@expo/vector-icons";
+import { Touchable } from "react-native";
+import { TouchableOpacity } from "react-native";
+
 
 function LoginScreen({ navigation }) {
   return (
@@ -92,15 +95,26 @@ function LoginScreen({ navigation }) {
           >
             LOGIN
           </Buttone>
+          
+            <Text
+              mt={-5}
+              fontFamily={FontName.openSans700}
+              fontSize={15}
+              color={Colors.white}
+            >
+              Don't Have Account?
 
-          <Text
-            mt={-5}
-            fontFamily={FontName.openSans700}
-            fontSize={15}
-            color={Colors.white}
-          >
-            Don't Have Account? Sign Up
-          </Text>
+          <TouchableOpacity onPress={() => navigation.navigate("SignUp")}>
+            <Text
+              mt={-5}
+              fontFamily={FontName.openSans700}
+              fontSize={15}
+              color="blue.500"
+            >
+              Sign Up
+            </Text>
+          </TouchableOpacity>
+            </Text>
         </VStack>
       </Box>
     </Box>
