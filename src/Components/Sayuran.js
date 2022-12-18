@@ -13,14 +13,14 @@ import Colors from "../color";
 import products from "../data/Products";
 import { FontAwesome, FontAwesome5, Ionicons } from "@expo/vector-icons";
 
-function Sayuran() {
+function Sayuran({ navigation }) {
   return (
     <FlatList
       showsVerticalScrollIndicator={false}
       data={products}
       keyExtractor={(item) => item._id}
       renderItem={({ item }) => (
-        <Pressable>
+        <Pressable onPress={() => navigation.navigate("")}>
           <Box mt={3}>
             <HStack
               p={2}

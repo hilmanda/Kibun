@@ -14,7 +14,7 @@ function LoginScreen({ navigation }) {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       if (user) {
-        navigation.replace("Beranda");
+        navigation.replace("Bottom");
       }
     });
 
@@ -87,6 +87,7 @@ function LoginScreen({ navigation }) {
           >
             Password
           </Text>
+
           <Input
             w="70%"
             pl={2}
@@ -100,15 +101,6 @@ function LoginScreen({ navigation }) {
             borderRadius={9}
             fontSize={14}
           />
-          <Text
-            ml={150}
-            mt={-5}
-            fontFamily={FontName.openSans700}
-            fontSize={15}
-            color={Colors.black}
-          >
-            forgot password ?
-          </Text>
 
           {/* LOGIN BUTTON */}
           <Buttone

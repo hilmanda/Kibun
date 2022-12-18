@@ -1,49 +1,63 @@
-import React from "react";
-import { Center } from "native-base";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import BerandaScreen from "../Screens/BerandaScreen";
-import { AntDesign, Entypo } from "@expo/vector-icons";
+import BuahScreen from "../Screens/BuahScreen";
+import { auth } from "../../firebase";
 import Colors from "../color";
 
 const Tab = createBottomTabNavigator();
 
-const BottomNav = () => {
+function BottomNav({ navigation }) {
+  const HandleSignOut = () => {
+    auth
+      .signOut()
+      .then(() => {
+        navigation.replace("Login");
+      })
+      .catch((error) => alert(error.message));
+  };
+
   return (
     <Tab.Navigator
-      backBehavior="main"
       initialRouteName="Main"
       screenOptions={{
-        tabBarShowLabel: false,
-        tabBarStyle: { ...styles.tab },
+        tabBarActiveTintColor: Colors.green,
         headerShown: false,
-        tabBarHideOnKeyboard: true,
       }}
     >
       <Tab.Screen
         name="Main"
         component={BerandaScreen}
         options={{
-          tabBarIcon: ({ focused }) => {
-            <Center>
-              {focused ? (
-                <Entypo name="home" size={24} color={Colors.green} />
-              ) : (
-                <AntDesign name="home" size={24} color={Colors.white} />
-              )}
-            </Center>;
-          },
+          tabBarLabel: "Home",
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="home" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Notifications"
+        component={BuahScreen}
+        options={{
+          tabBarLabel: "Updates",
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="bell" color={color} size={size} />
+          ),
+          tabBarBadge: 3,
+        }}
+      />
+      <Tab.Screen
+        name="Profile"
+        component={HandleSignOut}
+        options={{
+          tabBarLabel: "Profile",
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="logout" color={color} size={size} />
+          ),
         }}
       />
     </Tab.Navigator>
   );
-};
-
-const styles = StyleSheet.create({
-  tab: {
-    elevation: 0,
-    backgroundColor: Colors.white,
-    heig,
-  },
-});
+}
 
 export default BottomNav;
