@@ -1,6 +1,5 @@
 <div id="top"></div>
 <!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
 *** or simply open an issue with the tag "enhancement".
 *** Don't forget to give the project a star!
@@ -33,10 +32,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
-
   <p align="center">
-    An awesome README template to jumpstart your projects!
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
@@ -81,35 +77,19 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+![kibuner](https://user-images.githubusercontent.com/97590486/208285174-5f5eb933-1131-4410-aa4a-88325ee1deef.png)
+![Kibun](https://user-images.githubusercontent.com/97590486/208285175-d7bb3667-f27e-41f2-8d47-40d2d19fd48e.png)
 
 
+ Aplikasi ini merupakan perangkat lunak berbasis mobile aplikasi yang bertujuan untuk menyediakan serta menfasilitasi setiap pengguna yang membutuhkan kebutuhan dalam berkebun. Aplikasi yang dirancang merupakan aplikasi yang bersifat elektronik komersil yang memfasilitasi pengguna untuk melakukan pembelian dan pembayaran serta memberikan informasi tentang berkebun dan pengguna diberikan kesempatan untuk memberikan penilaiaan atas produk yang pernah di beli. Aplikasi ini mampu menampung data yang diinputkan  pengguna, seperti histori pembelian dan pembayaran pengguna, nama akun dan password akun pengguna.
 
-### Built With
+
+## Built With
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [Next.js](https://nextjs.org/)
 * [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -129,9 +109,6 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   npm install npm@latest -g
   ```
-
-### Installation
-
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
 1. Get a free API Key at [https://example.com](https://example.com)
@@ -151,70 +128,48 @@ _Below is an example of how you can instruct your audience on installing and set
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+<!-- Fitur -->
+## Fitur
+1. Login<br/>
+2. Artikel<br />
+3. Pembelian<br />
+4. Pembayaran<br />
+5. Logout<br />
 
 
 
-<!-- ROADMAP -->
-## Roadmap
+<!-- Languange-->
+## Languange
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+    - [v] Indonesia
+    - [v] English
 
 
 
-<!-- CONTRIBUTING -->
-## Contributing
+<!-- Fungsi Aplikasi -->
+## Fungsi Aplikasi
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+sistem ini akan dibuat dengan kemampuan:<br />
+1.	Menyediakan segala kebutuhan tanaman untuk kebun<br />
+2.	Menyediakan peralatan perkebunan<br />
+3.	Menyediakan info dan artikel terkait perkebunan<br />
+4.	Melakukan proses pembayaran dan pembelian pada produk yang telah di pilih<br />
+5.	Memberikan ratting kepada tanaman dan peralatan perkebunan yang sudah pernah di beli<br />
+6.	Mengedit data diri pada akun<br />
+7.	Mencatat pengguna yang login sehingga bisa diberikan hak akses kebutuhan<br />
 
 
 
-<!-- LICENSE -->
-## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+<!-- Member -->
+## Member
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+Jesika Putri	120140050 <br />
+Ryco gian Afta	120140159<br />
+Hilamanda Panji Orienski	120140130<br />
+Jhon Penator Sianturi	120140138<br />
+Iqbal Amrullah	119140161<br />
 
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
