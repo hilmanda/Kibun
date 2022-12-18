@@ -3,7 +3,7 @@ import { Box, Center, Text, VStack } from "native-base";
 import Colors from "../color";
 import FontName from "../fonts/fontName";
 import Buttone from "../Components/Buttone";
-import { AntDesign } from '@expo/vector-icons';
+import { AntDesign } from "@expo/vector-icons";
 
 function PembayaranSukses({ navigation }) {
   return (
@@ -25,7 +25,7 @@ function PembayaranSukses({ navigation }) {
         <Buttone
           bg={Colors.white}
           color={Colors.green}
-          onPress={() => navigation.navigate("Beranda")}
+          onPress={() => navigation.navigate("Bottom")}
         >
           Selesai
         </Buttone>

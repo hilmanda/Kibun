@@ -10,7 +10,7 @@ function BuahScreen({ navigation }) {
   return (
     <Box flex={1} safeAreaTop bg={Colors.green} py={10}>
       <VStack pl={5}>
-        <Pressable onPress={() => navigation.navigate("Beranda")}>
+        <Pressable onPress={() => navigation.navigate("Bottom")}>
           <AntDesign pb={-5} name="arrowleft" size={24} color={Colors.white} />
         </Pressable>
         <Heading

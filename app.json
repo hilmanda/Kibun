@@ -14,7 +14,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -29,10 +31,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/splash-kibun72.png",
         "backgroundColor": "#10BD01"
-      }
+      },
+      "package": "com.tubes.kibun"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f147e80d-54a6-4bf3-ae3a-1cffa9794b2b"
+      }
     }
   }
 }

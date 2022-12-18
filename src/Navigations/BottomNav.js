@@ -4,6 +4,7 @@ import BerandaScreen from "../Screens/BerandaScreen";
 import BuahScreen from "../Screens/BuahScreen";
 import { auth } from "../../firebase";
 import Colors from "../color";
+import TokoScreen from "../Screens/TokoScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -36,21 +37,35 @@ function BottomNav({ navigation }) {
         }}
       />
       <Tab.Screen
-        name="Notifications"
+        name="Chart"
         component={BuahScreen}
         options={{
-          tabBarLabel: "Updates",
+          tabBarLabel: "Chart",
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="bell" color={color} size={size} />
+            <MaterialCommunityIcons name="basket" color={color} size={size} />
           ),
           tabBarBadge: 3,
         }}
       />
       <Tab.Screen
-        name="Profile"
+        name="Toko"
+        component={TokoScreen}
+        options={{
+          tabBarLabel: "Toko",
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons
+              name="cart-outline"
+              color={color}
+              size={size}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="LogOut"
         component={HandleSignOut}
         options={{
-          tabBarLabel: "Profile",
+          tabBarLabel: "Log Out",
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="logout" color={color} size={size} />
           ),
