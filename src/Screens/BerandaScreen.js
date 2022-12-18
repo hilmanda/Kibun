@@ -6,8 +6,17 @@ import { FontAwesome, MaterialCommunityIcons } from "@expo/vector-icons";
 import TrenBeranda from "../Components/TrenBeranda";
 import pages from "../data/Pages";
 import Buttone from "../Components/Buttone";
+import {auth} from "../../firebase";
 
 function BerandaScreen({ navigation }) {
+  const handleSignOut = () => {
+    auth
+      .signOut()
+      .then(() => {
+        navigation.replace("Login");
+      })
+      .catch((error) => alert(error.message));
+  };
   return (
     <Box flex={1} safeAreaTop bg={Colors.green}>
       <Image
