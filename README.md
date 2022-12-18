@@ -1,6 +1,5 @@
 <div id="top"></div>
 <!--
-*** Aplikasi ini adalah aplikasi mobile yang memfasilitasi berbagai kebutuhan untuk perkebunan
 *** that would make this better, please fork the repo and create a pull request
 *** or simply open an issue with the tag "enhancement".
 *** Don't forget to give the project a star!
@@ -84,7 +83,8 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Aplikasi ini adalah aplikasi mobile yang memfasilitasi berbagai kebutuhan untuk perkebunan
+
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
