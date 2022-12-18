@@ -193,11 +193,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Member
 
-Jesika Putri	120140050
-Ryco gian Afta	120140159
-Hilamanda Panji Orienski	120140130
-Jhon Penator Sianturi	120140138
-Iqbal Amrullah	119140161
+Jesika Putri	120140050 </p>
+Ryco gian Afta	120140159</p>
+Hilamanda Panji Orienski	120140130</p>
+Jhon Penator Sianturi	120140138</p>
+Iqbal Amrullah	119140161</p>
 
 
 
