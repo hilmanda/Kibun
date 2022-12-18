@@ -8,22 +8,22 @@ import {
   Pressable,
   Text,
   VStack,
+  
 } from "native-base";
 import Colors from "../color";
-import products from "../data/Products";
-import { FontAwesome, FontAwesome5, Ionicons } from "@expo/vector-icons";
+import DataArtikel from "../data/DataArtikel";
+import Buttone from "../Components/Buttone";
 
-function TanamanHias() {
+function Artikel({ navigation }) {
   return (
     <FlatList
       showsVerticalScrollIndicator={false}
-      data={products}
-      keyExtractor={(item) => item._id}
+      data={DataArtikel}
       renderItem={({ item }) => (
         <Pressable>
           <Box mt={3}>
             <HStack
-              p={2}
+              p={5}
               alignItems="center"
               bg={Colors.white}
               shadow={1}
@@ -35,7 +35,7 @@ function TanamanHias() {
                   source={item.image}
                   alt={item.name}
                   w="full"
-                  h={24}
+                  h={20}
                   resizeMode="contain"
                   bg={Colors.lightGray}
                   rounded={10}
@@ -45,25 +45,14 @@ function TanamanHias() {
                 <Text isTruencated color={Colors.black} bold fontSize={15}>
                   {item.name}
                 </Text>
-                <Text isTruencated color={Colors.gray} fontSize={12}>
-                  <FontAwesome5 name="clock" size={12} color="black" />
-                  {" " + item.age}
-                </Text>
-                <Text isTruencated color={Colors.gray} fontSize={12}>
-                  <Ionicons name="water-outline" size={12} color="black" />
-                  {" " + item.water}
-                </Text>
               </VStack>
-              <Text isTruencated color={Colors.black} bold fontSize={15}>
-                <FontAwesome name="heart" size={24} color="red" />
-                {" " + item.rating}
-              </Text>
             </HStack>
           </Box>
         </Pressable>
       )}
     />
+    
   );
 }
 
-export default TanamanHias;
+export default Artikel;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Center, Image, Text, VStack } from "native-base";
+import { Box, Center, Text, VStack } from "native-base";
 import Colors from "../color";
 import FontName from "../fonts/fontName";
 import Buttone from "../Components/Buttone";
