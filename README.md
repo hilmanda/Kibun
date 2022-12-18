@@ -80,6 +80,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+![kibuner](https://user-images.githubusercontent.com/97590486/208285174-5f5eb933-1131-4410-aa4a-88325ee1deef.png)
+![Kibun](https://user-images.githubusercontent.com/97590486/208285175-d7bb3667-f27e-41f2-8d47-40d2d19fd48e.png)
 
 
  Aplikasi ini merupakan perangkat lunak berbasis mobile aplikasi yang bertujuan untuk menyediakan serta menfasilitasi setiap pengguna yang membutuhkan kebutuhan dalam berkebun. Aplikasi yang dirancang merupakan aplikasi yang bersifat elektronik komersil yang memfasilitasi pengguna untuk melakukan pembelian dan pembayaran serta memberikan informasi tentang berkebun dan pengguna diberikan kesempatan untuk memberikan penilaiaan atas produk yang pernah di beli. Aplikasi ini mampu menampung data yang diinputkan  pengguna, seperti histori pembelian dan pembayaran pengguna, nama akun dan password akun pengguna.
