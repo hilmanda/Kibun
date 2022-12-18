@@ -1,12 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Box, Center, Heading, Image, Input, Text, VStack } from "native-base";
 import Colors from "../color";
 import FontName from "../fonts/fontName";
 import Buttone from "../Components/Buttone";
 import { FontAwesome } from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native";
+import { auth } from "../../firebase";
 
 function SignUpScreen({ navigation }) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        navigation.navigate("Login");
+      }
+    });
+    return unsubscribe;
+  }, []);
+
+  const handleSignUp = () => {
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((userCredentials) => {
+        const user = userCredentials.user;
+        console.log(user.email);
+      })
+      .catch((error) => alert(error.message));
+  };
   return (
     <Box flex={1} bg={Colors.green}>
       <Box position="absolute" w="full" h="full">
@@ -58,6 +80,8 @@ function SignUpScreen({ navigation }) {
             w="70%"
             mb={-5}
             pl={2}
+            value={email}
+            onChangeText={(text) => setEmail(text)}
             color={Colors.green}
             backgroundColor={Colors.white}
             placeholder="Your Email"
@@ -81,10 +105,12 @@ function SignUpScreen({ navigation }) {
             w="70%"
             mb={-5}
             pl={2}
+            value={password}
+            onChangeText={(text) => setPassword(text)}
             color={Colors.green}
             backgroundColor={Colors.white}
             placeholder="Your Password"
-            type="password"
+            secureTextEntry
             fontFamily={FontName.openSans400}
             borderRadius={9}
             fontSize={14}
@@ -117,7 +143,7 @@ function SignUpScreen({ navigation }) {
             bg={Colors.white}
             color={Colors.green}
             w="70%"
-            onPress={() => navigation.navigate("Login")}
+            onPress={handleSignUp}
           >
             CREATE NEW ACCOUNT
           </Buttone>
