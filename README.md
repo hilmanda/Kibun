@@ -143,16 +143,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
-<!-- ROADMAP -->
-## Roadmap
+## Languange
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+    - [ ] Indonesia
+    - [ ] English
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
@@ -196,11 +190,11 @@ sistem ini akan dibuat dengan kemampuan:<br />
 <!-- CONTACT -->
 ## Member
 
-Jesika Putri	120140050 </p>
-Ryco gian Afta	120140159</p>
-Hilamanda Panji Orienski	120140130</p>
-Jhon Penator Sianturi	120140138</p>
-Iqbal Amrullah	119140161</p>
+Jesika Putri	120140050 <br />
+Ryco gian Afta	120140159<br />
+Hilamanda Panji Orienski	120140130<br />
+Jhon Penator Sianturi	120140138<br />
+Iqbal Amrullah	119140161<br />
 
 
 
