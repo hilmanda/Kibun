@@ -36,7 +36,7 @@ function WelcomeScreen({ navigation }) {
         <Buttone
           bg={Colors.white}
           color={Colors.green}
-          onPress={() => navigation.navigate("Login")}
+          onPress={() => navigation.navigate("Coba")}
         >
           LOGIN
         </Buttone>

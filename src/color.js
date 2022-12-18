@@ -1,3 +1,12 @@
+export const COLOURS = {
+    white: "#FFFFFF",
+    black: "#000000",
+    green: "#00CF7E",
+    red: "#C04345",
+    backgroundLight: "#ADEFD1",
+    backgroundDark: "#00203F",
+  };
+
 const Colors = {
     // main: linear-gradient(182.83deg, #10BD01 2.36%, #75E16C 98.74%),
     green: "#10BD01",
