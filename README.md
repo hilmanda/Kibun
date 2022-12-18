@@ -179,11 +179,17 @@ Don't forget to give the project a star! Thanks again!
 
 
 <!-- LICENSE -->
-## License
+## Fungsi Aplikasi
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+sistem ini akan dibuat dengan kemampuan:<br />
+1.	Menyediakan segala kebutuhan tanaman untuk kebun<br />
+2.	Menyediakan peralatan perkebunan<br />
+3.	Menyediakan info dan artikel terkait perkebunan<br />
+4.	Melakukan proses pembayaran dan pembelian pada produk yang telah di pilih<br />
+5.	Memberikan ratting kepada tanaman dan peralatan perkebunan yang sudah pernah di beli<br />
+6.	Mengedit data diri pada akun<br />
+7.	Mencatat pengguna yang login sehingga bisa diberikan hak akses kebutuhan<br />
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
