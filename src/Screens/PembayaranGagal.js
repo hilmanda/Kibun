@@ -9,7 +9,7 @@ function PembayaranSukses({ navigation }) {
   return (
     <Box flex={1} bg={Colors.green}>
       <Center w="full" mt={90}>
-        <AntDesign name="checkcircle" size={340} color="black" />
+        <AntDesign name="closecircle" size={340} color="black" />
         {/* <FontAwesome5>Enjoy Your Garden</FontAwesome5> */}
         <Text
           fontFamily={FontName.poppins700}
@@ -18,7 +18,7 @@ function PembayaranSukses({ navigation }) {
           color={Colors.white}
           mb={60}
         >
-          Pembayaran Sukses
+          Pembayaran Gagal
         </Text>
       </Center>
       <VStack space={6} px={5} alignItems="center">

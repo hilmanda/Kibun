@@ -16,6 +16,7 @@ import TanamanHiasScreen from "./src/Screens/TanamanHiasScreen";
 import SayuranScreen from "./src/Screens/SayuranScreen";
 import BuahScreen from "./src/Screens/BuahScreen";
 import PembayaranSukses from "./src/Screens/PembayaranSukses";
+import PembayaranGagal from "./src/Screens/PembayaranGagal";
 
 const Stack = createNativeStackNavigator();
 
@@ -47,7 +48,8 @@ export default function App() {
           <Stack.Screen name="TanamanHias" component={TanamanHiasScreen} />
           <Stack.Screen name="Sayuran" component={SayuranScreen} />
           <Stack.Screen name="Buah" component={BuahScreen} />
-          <Stack.Screen name="Coba" component={PembayaranSukses}/>
+          <Stack.Screen name="Sukses" component={PembayaranSukses}/>
+          <Stack.Screen name="Gagal" component={PembayaranGagal}/>
         </Stack.Navigator>
       </NavigationContainer>
     </NativeBaseProvider>
