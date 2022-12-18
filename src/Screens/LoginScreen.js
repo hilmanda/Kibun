@@ -14,7 +14,7 @@ function LoginScreen({ navigation }) {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       if (user) {
-        navigation.navigate("Beranda");
+        navigation.replace("Beranda");
       }
     });
 
