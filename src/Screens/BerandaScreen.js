@@ -1,22 +1,13 @@
 import React from "react";
-import { Box, Heading, VStack, HStack, Image, Text } from "native-base";
+import { Box, Heading, HStack, Image, Text } from "native-base";
 import Colors from "../color";
 import FontName from "../fonts/fontName";
-import { FontAwesome, MaterialCommunityIcons } from "@expo/vector-icons";
+import { FontAwesome } from "@expo/vector-icons";
 import TrenBeranda from "../Components/TrenBeranda";
 import pages from "../data/Pages";
 import Buttone from "../Components/Buttone";
-import {auth} from "../../firebase";
 
 function BerandaScreen({ navigation }) {
-  const handleSignOut = () => {
-    auth
-      .signOut()
-      .then(() => {
-        navigation.replace("Login");
-      })
-      .catch((error) => alert(error.message));
-  };
   return (
     <Box flex={1} safeAreaTop bg={Colors.green}>
       <Image
@@ -26,28 +17,24 @@ function BerandaScreen({ navigation }) {
         size="170"
         alt="logo-kibun"
       />
-      <HStack w="full" mt={-10}>
-        <VStack w="full" alignItems="center" mr={-120}>
-          <Heading
-            fontFamily={FontName.poppins700}
-            fontSize={24}
-            pl={5}
-            color={Colors.white}
-            isTruncated
-          >
-            Jesika Putri
-          </Heading>
-          <Text
-            fontFamily={FontName.poppins700}
-            fontSize={15}
-            pl={5}
-            pb={10}
-            color={Colors.white}
-            isTruncated
-          >
-            0822-2121-0909
-          </Text>
-        </VStack>
+      <HStack
+        w="full"
+        mt={-10}
+        mb={5}
+        ml={-5}
+        justifyContent="flex-end"
+        alignItems="center"
+        space={2}
+      >
+        <Heading
+          fontFamily={FontName.poppins700}
+          fontSize={24}
+          pl={5}
+          color={Colors.white}
+          isTruncated
+        >
+          Jesika Putri
+        </Heading>
         <FontAwesome name="user-circle-o" size={50} color="white" />
       </HStack>
       {/* <Center pb={5}>
