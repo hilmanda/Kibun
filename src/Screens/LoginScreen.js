@@ -108,7 +108,8 @@ function LoginScreen({ navigation }) {
             bg={Colors.white}
             color={Colors.green}
             w="70%"
-            onPress={handleLogIn}
+            // onPress={handleLogIn}
+            onPress={() => navigation.navigate("Bottom")}
           >
             LOGIN
           </Buttone>

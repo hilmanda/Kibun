@@ -143,7 +143,8 @@ function SignUpScreen({ navigation }) {
             bg={Colors.white}
             color={Colors.green}
             w="70%"
-            onPress={handleSignUp}
+            // onPress={handleSignUp}
+            onPress={() => navigation.navigate("Login")}
           >
             CREATE NEW ACCOUNT
           </Buttone>
