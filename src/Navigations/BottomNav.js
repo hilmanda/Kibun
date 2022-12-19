@@ -1,10 +1,11 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import BerandaScreen from "../Screens/BerandaScreen";
-import BuahScreen from "../Screens/BuahScreen";
 import { auth } from "../../firebase";
 import Colors from "../color";
 import TokoScreen from "../Screens/TokoScreen";
+import Keranjang from "../Screens/Keranjang";
+import ArtikelScreen from "../Screens/ArtikelScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -37,14 +38,17 @@ function BottomNav({ navigation }) {
         }}
       />
       <Tab.Screen
-        name="Chart"
-        component={BuahScreen}
+        name="Artikel"
+        component={ArtikelScreen}
         options={{
-          tabBarLabel: "Chart",
+          tabBarLabel: "Artikel",
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="basket" color={color} size={size} />
+            <MaterialCommunityIcons
+              name="file-document"
+              color={color}
+              size={size}
+            />
           ),
-          tabBarBadge: 3,
         }}
       />
       <Tab.Screen
@@ -59,6 +63,17 @@ function BottomNav({ navigation }) {
               size={size}
             />
           ),
+        }}
+      />
+      <Tab.Screen
+        name="Chart"
+        component={Keranjang}
+        options={{
+          tabBarLabel: "Chart",
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="basket" color={color} size={size} />
+          ),
+          tabBarBadge: 3,
         }}
       />
       <Tab.Screen
