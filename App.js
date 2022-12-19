@@ -22,6 +22,7 @@ import TrenScreen from "./src/Screens/TrenScreen";
 import TrenScreen2 from "./src/Screens/TrenScreen2";
 import ArtikelScreen from "./src/Screens/ArtikelScreen";
 import BottomNav from "./src/Navigations/BottomNav";
+import Keranjang from "./src/Screens/Keranjang";
 
 const Stack = createNativeStackNavigator();
 
@@ -60,6 +61,7 @@ export default function App() {
           <Stack.Screen name="Tren" component={TrenScreen} />
           <Stack.Screen name="Tren2" component={TrenScreen2} />
           <Stack.Screen name="Artikel" component={ArtikelScreen} />
+          <Stack.Screen name="Keranjang" component={Keranjang} />
         </Stack.Navigator>
       </NavigationContainer>
     </NativeBaseProvider>
